@@ -1,0 +1,26 @@
+\section{section1}\label{sec:section1}
+	\lipsum[2]
+	
+	\newpage
+	\lstinputlisting[caption=Ein C-Beispiel, language=C]{/home/thomas/project/chapter1/section1/code/code.c} %externen C code einbinden
+		
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{%
+			/home/thomas/project/chapter1/section1/pictures/Bild.jpg}
+		\caption[Bild]{Das ist ein Bild von einem \Gls{tacutacu}\index{Tacutacu} %
+		               und nicht von \Glspl{raspadilla}\index{Raspadilla}.}
+		\label{pic:Bild}
+	\end{figure} %\gls fuer einen Link ins Glossar \glspl fuer die Pluralform, \Gls und \Glspl fuer Grossbuchstaben
+	
+	\begin{figure}[h]
+		\centering
+		\scalebox{0.8}{\input{%
+			/home/thomas/project/chapter1/section1/plots/Plot.pgf}}
+		\caption[Plot]{Das ist ein Bild}
+		\label{pic:Plot}
+	\end{figure}
+	
+	\subsection{subsection1}
+		\lipsum[3]
+		

@@ -1,0 +1,69 @@
+\section{section2}
+	\lipsum[4]
+	
+	\begin{equation}\label{eq:Gleichung}
+		a=2b
+	\end{equation}
+	\begin{equation}
+		a=x^2
+	\end{equation}
+	Bezieht sich auf Gleichung \ref{eq:Gleichung} auf Seite \pageref{eq:Gleichung}.
+	
+	\begin{thm}[Pythagoras]\label{thm:Pythagoras}
+		\begin{gather}
+			a^2 + b^2 = c^2
+		\end{gather}	
+	\end{thm}
+	
+	\begin{table}[h] %import aus externer csv Datei
+		\centering	
+		\csvreader[tabular=|l|l|l|,table head=\hline & \textbf{Name} & \textbf{Vorname}\\\hline,late after line=\\\hline]%
+    	{/home/thomas/project/chapter1/section2/tables/table.csv}{name=\name,surname=\surname}%
+		{\thecsvrow & \name & \surname}%			    
+		\caption[CSV Import]{Eine als csv importierte Tabelle.}
+		\label{tab:Tabelle1}
+	\end{table}
+
+	\lipsum[1]
+	
+	Ein Plot:
+	\begin{figure}
+		\centering
+		\scalebox{.8}{\input{/home/thomas/project/chapter1/section2/plots/plot.pgf}}
+		\caption{Ein pgf-Plot...}
+		\label{fig:pgfplot}
+	\end{figure}
+	
+	Die Daten dafür:
+	\begin{table}[h] %import aus externer csv Datei
+		\centering	
+		\csvreader[tabular=|l|l|l|,table head=\hline & \textbf{x - Werte} & \textbf{y - Werte}\\\hline,late after line=\\\hline]%
+    	{/home/thomas/project/chapter1/section2/tables/data.dat}{x=\x,y=\y}%
+		{\thecsvrow & \x & \y}%			    
+		\caption[Daten]{...und die Daten dazu.}
+		\label{tab:pgfplot}
+	\end{table}
+	
+	%%% Das Sagetex Beispiel von der Homepage
+
+%	Hier ein wenig Sage Code:
+%
+%	\begin{sageblock}
+%    	f(x) = exp(x) * sin(2*x)
+%	\end{sageblock}
+%
+%	Die zweite Ableitung von $f$ ist
+%
+%	\begin{equation}
+%  		\frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}} \sage{f(x)} =
+%  		\sage{diff(f, x, 2)(x)}.
+%	\end{equation}
+%
+%	Hier ein Plot von $f$ von $-1$ bis $1$:
+%
+%	\begin{figure}[h]
+%		\centering
+%		\scalebox{0.7}{\sageplot{plot(f, -1, 1)}}
+%		\caption{Ein Sage-Plot}
+%	\end{figure}	
+	
