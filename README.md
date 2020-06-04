@@ -1,4 +1,4 @@
-  Dies ist ein Template fuer grosse Dokumente.                             
+  Dies ist ein Template für große Dokumente.                             
 
   Features:               
  
