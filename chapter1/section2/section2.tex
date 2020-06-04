@@ -18,7 +18,7 @@
 	\begin{table}[h] %import aus externer csv Datei
 		\centering	
 		\csvreader[tabular=|l|l|l|,table head=\hline & \textbf{Name} & \textbf{Vorname}\\\hline,late after line=\\\hline]%
-    	{/home/thomas/project/chapter1/section2/tables/table.csv}{name=\name,surname=\surname}%
+    	{chapter1/section2/tables/1.2.table.csv}{name=\name,surname=\surname}%
 		{\thecsvrow & \name & \surname}%			    
 		\caption[CSV Import]{Eine als csv importierte Tabelle.}
 		\label{tab:Tabelle1}
@@ -29,7 +29,7 @@
 	Ein Plot:
 	\begin{figure}
 		\centering
-		\scalebox{.8}{\input{/home/thomas/project/chapter1/section2/plots/plot.pgf}}
+		\scalebox{.8}{\input{chapter1/section2/plots/1.2.Plot.pgf}}
 		\caption{Ein pgf-Plot...}
 		\label{fig:pgfplot}
 	\end{figure}
@@ -38,7 +38,7 @@
 	\begin{table}[h] %import aus externer csv Datei
 		\centering	
 		\csvreader[tabular=|l|l|l|,table head=\hline & \textbf{x - Werte} & \textbf{y - Werte}\\\hline,late after line=\\\hline]%
-    	{/home/thomas/project/chapter1/section2/tables/data.dat}{x=\x,y=\y}%
+    	{chapter1/section2/tables/1.2.data.dat}{x=\x,y=\y}%
 		{\thecsvrow & \x & \y}%			    
 		\caption[Daten]{...und die Daten dazu.}
 		\label{tab:pgfplot}

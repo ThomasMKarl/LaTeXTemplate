@@ -1,4 +1,4 @@
-MAIN= project.tex
+NAME= project.tex
 MAKEGLOSSARIES= makeglossaries
 MAKEINDEX= makeindex
 BIBTEX= biber
@@ -40,7 +40,7 @@ forceglossary: glossary.tex
 	$(MAKEGLOSSARIES) project
 
 clean:
-	rm -rf *.aux *.bbl *.bcf *.blg *.glg *.glo *.gls *.lot *.toc *.idx *.out *.ist *.lof *.log *.lol *.ptc *.run.xml
+	rm -rf *.aux *.bbl *.bcf *.blg *.glg *.glo *.gls *.lot *.toc *.idx *.out *.ist *.lof *.log *.lol *.ptc *.loe *.tex.bak *.run.xml
 
 realclean:
-	rm -rf *.aux *.bbl *.bcf *.blg *.glg *.glo *.gls *.lot *.toc *.idx *.out *.ist *.lof *.log *.lol *.ptc *.run.xml project.pdf
+	rm -rf *.aux *.bbl *.bcf *.blg *.glg *.glo *.gls *.lot *.toc *.idx *.out *.ist *.lof *.log *.lol *.ptc *.run.xml *.loe *.tex.bak project.pdf

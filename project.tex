@@ -12,16 +12,6 @@
 %  -Abstract am Anfang                                                          %
 %  -Druckfertig                                                                 %
 %                                                                               %
-%  Anwendung:                                                                   %
-%  lualatex project.tex                                                         %
-%  biber project                                                                %
-%  makeindex project                                                            %
-%  makeglossaries project (nicht im Editor enthalten, entweder eigenes Kommando %
-%                          hinzufuegen oder aus Kommandozeile starten)          %
-%  sage project.sagetex.sage (erfordert die Installation von Sage)              %
-%  lualatex project.tex                                                         %
-%  lualatex project.tex                                                         %
-%                                                                               %
 % texen im Editor nur von project.tex aus                                       %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -208,15 +198,15 @@
 	
 	%\startcontents[chapter1] %partielles Inhaltsverzeichnis fuer chapter1 definieren
 	%\printcontents[chapter1]{l}{1}{\chapter*{chapter1}\setcounter{tocdepth}{2}} %Inhalt ausgeben
-	\input{/home/thomas/project/chapter1/chapter1.tex} %Einfuehrung?
+	\input{chapter1/chapter1.tex} %Einfuehrung?
 	%\stopcontents[chapter1] %Definition beenden
-	\input{/home/thomas/project/chapter2/chapter2.tex} %Theorie?
+	\input{chapter2/chapter2.tex} %Theorie?
 	% ....
-	\input{/home/thomas/project/chapter3/chapter3.tex} %Zusammenfassung?
+	\input{chapter3/chapter3.tex} %Zusammenfassung?
 	
 	\appendix
-	\input{/home/thomas/project/appendix/appendixA.tex}
-	\input{/home/thomas/project/appendix/appendixB.tex}
+	\input{appendix/appendixA.tex}
+	\input{appendix/appendixB.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
