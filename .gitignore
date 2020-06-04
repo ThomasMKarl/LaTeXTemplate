@@ -20,3 +20,5 @@ project.pdf
 *.tex.bak 
 *.run.xml
 *.loe
+*.ilg
+*.ind

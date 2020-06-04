@@ -13,6 +13,16 @@
 %  -Druckfertig                                                                 %
 %                                                                               %
 % texen im Editor nur von project.tex aus                                       %
+% make ...                                                                      %
+% all       : compiles main file twice                                          %
+% force     : delete helper files, compiles, makes bibliography, makes index,   %
+%             makes glossaries, compiles twice                                  %
+% project   : compiles main file twice                                          %
+% biber     : makes bibliography                                                %
+% glossary  : makes glossaries                                                  %
+% index     : makes index                                                       %
+% clean     : deletes helper files                                              %
+% realclean : deletes helper file and pdf                                       %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %
@@ -101,7 +111,7 @@
 
 %Literaturverzeichnis
 \usepackage[backend=biber,style=authoryear-ibid,autocite=footnote,bibstyle=numeric]{biblatex}
-\addbibresource{/home/thomas/project/literature/lit.bib} %richtigen Pfad ersetzen
+\addbibresource{literature/lit.bib} %richtigen Pfad ersetzen
 
 %Index
 \usepackage{makeidx}

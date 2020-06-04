@@ -1,42 +1,46 @@
-  Dies ist ein Template für große Dokumente.                             
+Dies ist ein Template für große Dokumente.
 
-  Features:               
+Features:
  
-  -(partielles) Inhaltsverzeichnis                                       
+-(partielles) Inhaltsverzeichnis
 
-  -Abbildungs-, Tabellen- und Literaturverzeichnis                     
+-Abbildungs-, Tabellen- und Literaturverzeichnis
 
-  -Index                                                          
+-Index
 
-  -Glossar    
+-Glossar
 
-  -Liste der Theoreme, Liste der Codebloecke   
+-Liste der Theoreme, Liste der Codebloecke
 
-  -Kapitel und Unterkapitel in einzelne Ordner ausgelagert mit Beispielen
+-Kapitel und Unterkapitel in einzelne Ordner ausgelagert mit Beispielen
 
-  -Bilder, Code, Tabellen und Plots in seperaten Ordnern      
+-Bilder, Code, Tabellen und Plots in seperaten Ordnern
 
-  -Anhang am Ende       
+-Anhang am Ende
 
-  -Abstract am Anfang     
+-Abstract am Anfang
 
-  -Druckfertig                                                    
-
+-Druckfertig
                                                                    
 
-  Anwendung:     
+Anwendung: make ...
 
-  lualatex project.tex    
-
-  biber project  
-
-  makeindex project    
-
-  makeglossaries project (nicht im Editor enthalten, entweder eigenes Kommando hinzufuegen oder aus Kommandozeile starten)   
-  
-  lualatex project.tex       
-
-  lualatex project.tex     
+ all       : compiles main file twice
+ 
+ force     : delete helper files, compiles, makes bibliography, 
+             makes index, makes glossaries, compiles twice
+             
+ project   : compiles main file twice
+ 
+ biber     : makes bibliography
+ 
+ glossary  : makes glossaries
+ 
+ index     : makes index
+ 
+ clean     : deletes helper files
+ 
+ realclean : deletes helper file and pdf
 
                                              
- texen im Editor nur von project.tex aus        
+ texen im Editor nur von project.tex aus
