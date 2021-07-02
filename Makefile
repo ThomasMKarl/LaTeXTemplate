@@ -11,7 +11,8 @@ DATA= chapter1/section1/code/1.1.code.c chapter1/section1/pictures/Bild.png chap
 all:
 	make project
 
-## force     : delete helper files, compiles, makes bibliography, makes index, makes glossaries, compiles twice
+## force     : delete helper files, compiles, makes bibliography, \
+##             makes index, makes glossaries, compiles twice
 .PHONY: force
 force:
 	make realclean
