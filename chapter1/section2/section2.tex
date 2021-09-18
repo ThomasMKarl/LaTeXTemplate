@@ -1,5 +1,5 @@
 \section{section2}
-	\lipsum[4]
+	Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht?
 	
 	\begin{equation}\label{eq:Gleichung}
 		a=2b
@@ -18,13 +18,13 @@
 	\begin{table}[h] %import aus externer csv Datei
 		\centering	
 		\csvreader[tabular=|l|l|l|,table head=\hline & \textbf{Name} & \textbf{Vorname}\\\hline,late after line=\\\hline]%
-    	{chapter1/section2/tables/1.2.table.csv}{name=\name,surname=\surname}%
-		{\thecsvrow & \name & \surname}%			    
+    	{chapter1/section2/tables/1.2.table.csv}{lastname=\lastname,givenname=\givenname}%
+		{\thecsvrow & \lastname & \givenname}%
 		\caption[CSV Import]{Eine als csv importierte Tabelle.}
 		\label{tab:Tabelle1}
 	\end{table}
 
-	\lipsum[1]
+	Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen?
 
 	\newpage
 	
@@ -46,7 +46,35 @@
 		\label{tab:pgfplot}
 	\end{table}
 	
-	%%% Das Sagetex Beispiel von der Homepage
+%	Ist in Python $2 + 2$ wirklich vier? Führt man \pyb{2+2} in der Konsole aus, so ist das Ergebnis \py{2+2}. 
+%	Das Ergebnis lässt sich als Variable speichern. \pyc{globalResult = 2+2} Das Ergebnis war \py{globalResult}.
+%	In der Konsole würde das so aussehen:
+%	
+%\begin{pyconsole}
+%globalResult = 2+2
+%globalResult
+%\end{pyconsole}
+%	
+%	Ein Beispiel mit SymPy:
+%	
+%\begin{pycode}
+%from sympy import *
+%t = symbols('t')
+%y = Function('y')
+%equation = Eq(y(t).diff(t, t) - y(t), exp(t))
+%result = dsolve(Eq(y(t).diff(t, t) - y(t), exp(t)), y(t))
+%\end{pycode}
+%	
+%	Die Lösung der Differentialgleichung
+%	\begin{equation}
+%		\pyc{print(latex(equation))} \qquad \text{mit}\quad t\in\mathds{R}
+%	\end{equation}
+%	lautet:
+%	\begin{equation}
+%		\pyc{print(latex(result))} \qquad \text{mit beliebigen Konstanten}\quad C_1,C_2\in\mathds{R}
+%	\end{equation}
+	
+	%%% Sagetex Beispiel
 
 %	Hier ein wenig Sage Code:
 %
