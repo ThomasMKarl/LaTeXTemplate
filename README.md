@@ -1,7 +1,7 @@
-Dies ist ein Template für große Dokumente.
+# Dies ist ein Template für große Dokumente
 
-Features:
- 
+## Features
+
 -(partielles) Inhaltsverzeichnis
 
 -Abbildungs-, Tabellen- und Literaturverzeichnis
@@ -21,26 +21,25 @@ Features:
 -Abstract am Anfang
 
 -Druckfertig
-                                                                   
 
-Anwendung: make ...
+## Anwendung: make help
 
  all       : compiles main file twice
- 
- force     : delete helper files, compiles, makes bibliography, 
-             makes index, makes glossaries, compiles twice
-             
- project   : compiles main file twice
- 
- biber     : makes bibliography
- 
- glossary  : makes glossaries
- 
- index     : makes index
- 
- clean     : deletes helper files
- 
- realclean : deletes helper file and pdf
 
-                                             
+ force     : delete helper files, compiles, makes python, makes bibliography, makes index, makes glossaries, compiles twice
+
+ project   : compiles main file twice
+
+ biber     : makes bibliography
+
+ glossary  : makes glossaries
+
+ index     : makes index
+
+ python    : makes pythontex
+
+ clean     : deletes helper files
+
+ realclean : deletes helper files, pdfs and python code
+
  texen im Editor nur von project.tex aus
